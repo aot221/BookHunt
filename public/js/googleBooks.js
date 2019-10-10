@@ -1,9 +1,7 @@
 
 
 $(document).ready(function() {
-	var tableData = document.getElementById("google-book-table"); 
-    console.log( "ready!" );
-
+	var tableData = document.getElementById("google-book-table");     
     //Event for when search button is clicked
 	$("#book-search-submit").click(function(){		
 		var searchTerms = $("#book-search").val();
@@ -44,7 +42,8 @@ $(document).ready(function() {
 					  `</tbody>
 					  </table>`
 					  ;
-
+					  
+					//set  HTML content of the table to be the search results
 					tableData.innerHTML = table;			   
 			}
 		});
