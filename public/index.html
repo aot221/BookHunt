@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="utf-8"/>
 		<script src="/js/jquery.min.js"></script>
-		<script src="/js/googleBooks.js"></script>
+		<script type="module" src="/js/main.js"></script>
+		<!-- <script data-main="/js/main" src="/js/require.js"></script> -->
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 	</head>
 	<body>		
 		<!-- Search form for the google books api -->
 		Search Google Books: <input id="book-search" type="search"><br>
 		<button class="btn-primary" id="book-search-submit" type="submit">Search!</button>
+		<p id="error-message"></p>
 
 		<!-- Table for google books -->
 		<table id="google-book-table" class="table table-striped">
