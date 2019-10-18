@@ -2,7 +2,6 @@ const assert = require('assert');
 const request = require("request");
 const base_url = "http://localhost:3000/";
 
-import * as search from "./public/js/Modules/search.js";
 import * as inputCheck from "./public/js/Modules/inputCheck.js";
 
 //requires application to be running on localhost
